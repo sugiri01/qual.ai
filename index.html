@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functionality List - EdAthena</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Main Container -->
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-64 bg-blue-900 text-white p-5">
+      <h2 class="text-xl font-bold mb-4">Functionality List</h2>
+      <ul class="space-y-4">
+        <li><a href="#" onclick="showSection('onboarding')" class="block py-2 px-3 rounded hover:bg-blue-700">Admin Onboarding</a></li>
+        <li><a href="#" onclick="showSection('batch-maintenance')" class="block py-2 px-3 rounded hover:bg-blue-700">Admin Batch Maintenance</a></li>
+        <li><a href="#" onclick="showSection('study-material')" class="block py-2 px-3 rounded hover:bg-blue-700">Admin Study Material</a></li>
+        <li><a href="#" onclick="showSection('student-management')" class="block py-2 px-3 rounded hover:bg-blue-700">Student Management</a></li>
+        <li><a href="#" onclick="showSection('trainer-management')" class="block py-2 px-3 rounded hover:bg-blue-700">Trainer Management</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="flex-1 p-6 bg-white">
+      <!-- Onboarding Section -->
+      <div id="onboarding" class="hidden">
+        <h2 class="text-2xl font-bold mb-4">Onboarding Student</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">User ID, Password Creation</h3>
+            <p>Create user credentials and handle basic details entry.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Agreement Handling</h3>
+            <p>Manage agreements and document processing.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Course Decision & Fees</h3>
+            <p>Guide students through course selection and fee payments or loan facilitation.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Batch Timing and Dates</h3>
+            <p>Fix batch timing, start and end dates.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Batch Maintenance Section -->
+      <div id="batch-maintenance" class="hidden">
+        <h2 class="text-2xl font-bold mb-4">Batch Maintenance</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Trainer Availability</h3>
+            <p>Manage trainer schedules and availability for each batch.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Student Batch Adjustments</h3>
+            <p>Adjust students between batches as needed.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Weekly Class Coordination</h3>
+            <p>Coordinate weekly classes and handle schedule conflicts.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Ticket Maintenance</h3>
+            <p>Track and manage tickets raised by students and trainers.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Test Project & Certificate Coordination</h3>
+            <p>Coordinate test projects and manage certificate issuance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study Material Section -->
+      <div id="study-material" class="hidden">
+        <h2 class="text-2xl font-bold mb-4">Study Material</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Weekly Material Allocation</h3>
+            <p>Allocate study materials on a weekly basis.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Project Allocation and Evaluation</h3>
+            <p>Allocate projects and handle their evaluation process.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Reporting</h3>
+            <p>Generate reports on student progress and project outcomes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Management Section -->
+      <div id="student-management" class="hidden">
+        <h2 class="text-2xl font-bold mb-4">Student Management</h2>
+        <div class="space-y-4">
+          <!-- Student -->
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">User ID, Password</h3>
+            <p>Manage student credentials and access.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">PY Test</h3>
+            <p>Conduct Python tests as part of the student evaluation.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Dashboard</h3>
+            <p>Keep updating the student dashboard with relevant information.</p>
+          </div>
+          <!-- Course List -->
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Course List</h3>
+            <p>Maintain an updated list of courses available for students.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Batch Allotment</h3>
+            <p>Allocate students to appropriate batches.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Material Loading</h3>
+            <p>Load study materials for each batch.</p>
+          </div>
+          <!-- Capstone Project -->
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Capstone Project</h3>
+            <p>Guide students in selecting and executing capstone projects.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Milestone</h3>
+            <p>Set and track milestones for capstone projects.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Feedback & Evaluation</h3>
+            <p>Provide feedback and evaluate project progress.</p>
+          </div>
+          <!-- Finishing School -->
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Finishing School Classes</h3>
+            <p>Offer soft skills, resume writing, and interview guidance classes.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Interview Preparation</h3>
+            <p>Conduct multiple interview rounds to prepare students.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Placement Assistance</h3>
+            <p>Assist students in securing placements through interviews and support.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trainer Management Section -->
+      <div id="trainer-management" class="hidden">
+        <h2 class="text-2xl font-bold mb-4">Trainer Management</h2>
+        <div class="space-y-4">
+          <!-- Trainer -->
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">User ID, Password</h3>
+            <p>Manage trainer credentials and access.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Dashboard</h3>
+            <p>Keep updating the trainer dashboard with relevant information.</p>
+          </div>
+          <!-- Course Creation -->
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Course Creation & Material Recording</h3>
+            <p>Record and upload course materials for student access.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Project Creation</h3>
+            <p>Develop and manage course projects, including setup and guidelines.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Availability</h3>
+            <p>Maintain trainer availability schedules for classes and student queries.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Ticket Clearance</h3>
+            <p>Address and resolve tickets related to course queries and technical issues.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Test Evaluation</h3>
+            <p>Evaluate student tests and provide feedback based on performance.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Project Evaluation</h3>
+            <p>Assess and provide feedback on student projects.</p>
+          </div>
+          <!-- Capstone Project -->
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Capstone Project Guidance</h3>
+            <p>Guide students through their capstone projects, providing mentorship and support.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <h3 class="font-semibold">Evaluation</h3>
+            <p>Evaluate capstone project outcomes and provide final assessments and feedback.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to show the selected section and hide others
+    function showSection(sectionId) {
+      const sections = ['onboarding', 'batch-maintenance', 'study-material', 'student-management', 'trainer-management'];
+      sections.forEach(section => {
+        document.getElementById(section).classList.add('hidden');
+      });
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>

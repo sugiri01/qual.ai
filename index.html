@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdAthena Recruitment Strategy Options</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* shadcn inspired styles */
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+      --primary: 221.2 83.2% 53.3%;
+      --primary-foreground: 210 40% 98%;
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 221.2 83.2% 53.3%;
+      --radius: 0.5rem;
+    }
+
+    body {
+      background-color: hsl(222.2 84% 4.9% / 0.95);
+      color: white;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .card {
+      background-color: hsl(222.2 84% 4.9% / 0.8);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    th {
+      font-weight: 600;
+      text-align: left;
+      padding: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    td {
+      padding: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+    }
+
+    .badge-primary {
+      background-color: hsl(221.2 83.2% 53.3%);
+      color: white;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius);
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      cursor: pointer;
+    }
+
+    .button-primary {
+      background-color: hsl(221.2 83.2% 53.3%);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background-color: hsl(221.2 83.2% 43.3%);
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 1.875rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .header-line {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.875rem;
+      padding: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="p-4 max-w-6xl mx-auto">
+  <div class="header-line flex justify-between items-center">
+    <h1>EdAthena Recruitment Strategy Options</h1>
+    <a href="index2.html" class="button button-primary">Final Recommendation</a>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Strategy 1 -->
+    <div class="card">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="m-0">Option 1</h2>
+        <span class="badge badge-primary">Image 1</span>
+      </div>
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>% Focus from Naukri</th>
+              <th>% Focus from Hot Jobs</th>
+              <th>% Focus from Emails</th>
+              <th>Profiles to Shortlist</th>
+              <th>Hot Jobs Allocated</th>
+              <th>Emails to Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">Trainers</td>
+              <td>40%</td>
+              <td>30%</td>
+              <td>30%</td>
+              <td>692 profiles</td>
+              <td>2 hot jobs</td>
+              <td>4,500 emails</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Telecallers</td>
+              <td>20%</td>
+              <td>20%</td>
+              <td>60%</td>
+              <td>346 profiles</td>
+              <td>1 hot job</td>
+              <td>9,000 emails</td>
+            </tr>
+            <tr>
+              <td class="font-medium">BDM</td>
+              <td>15%</td>
+              <td>20%</td>
+              <td>65%</td>
+              <td>260 profiles</td>
+              <td>1 hot job</td>
+              <td>9,750 emails</td>
+            </tr>
+            <tr>
+              <td class="font-medium">HR</td>
+              <td>10%</td>
+              <td>15%</td>
+              <td>75%</td>
+              <td>173 profiles</td>
+              <td>1 hot job</td>
+              <td>11,250 emails</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Admin (HR & LMS)</td>
+              <td>15%</td>
+              <td>15%</td>
+              <td>70%</td>
+              <td>260 profiles</td>
+              <td>1 hot job</td>
+              <td>10,500 emails</td>
+            </tr>
+            <tr class="font-bold">
+              <td>Total</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>300%</td>
+              <td>1,731 profiles</td>
+              <td>6 hot jobs</td>
+              <td>45,000 emails</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-4 text-sm text-gray-400">
+        <div class="font-medium mb-1">Key Points:</div>
+        <ul class="list-disc pl-5">
+          <li>Heavy focus on Trainers (40% of Naukri profiles)</li>
+          <li>Strategic use of email for support roles</li>
+          <li>Note: Email allocation exceeds total (appears to be an error)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Strategy 2 -->
+    <div class="card">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="m-0">Option 2</h2>
+        <span class="badge badge-primary">Image 2</span>
+      </div>
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Naukri Profiles</th>
+              <th>Hot Jobs</th>
+              <th>Email Campaigns</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">Trainers</td>
+              <td>485 (28%)</td>
+              <td>2</td>
+              <td>3,750 (25%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">BDM</td>
+              <td>450 (26%)</td>
+              <td>2</td>
+              <td>3,000 (20%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">HR</td>
+              <td>346 (20%)</td>
+              <td>1</td>
+              <td>1,500 (10%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Admin - HR & LMS</td>
+              <td>260 (15%)</td>
+              <td>1</td>
+              <td>750 (5%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Telecallers</td>
+              <td>190 (11%)</td>
+              <td>0</td>
+              <td>6,000 (40%)</td>
+            </tr>
+            <tr class="font-bold">
+              <td>Total</td>
+              <td>1,731 (100%)</td>
+              <td>6</td>
+              <td>15,000 (100%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-4 text-sm text-gray-400">
+        <div class="font-medium mb-1">Key Points:</div>
+        <ul class="list-disc pl-5">
+          <li>Balanced allocation with focus on Trainers and BDM</li>
+          <li>Efficient resource allocation across channels</li>
+          <li>Low allocation for Telecaller Naukri profiles (11%)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Strategy 3 -->
+    <div class="card">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="m-0">Option 3</h2>
+        <span class="badge badge-primary">Image 3</span>
+      </div>
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Profiles (1731)</th>
+              <th>Hot Jobs (6)</th>
+              <th>Emails (15,000)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">Trainers</td>
+              <td>500 (28.9%)</td>
+              <td>2 (33.3%)</td>
+              <td>4,500 (30%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Telecallers</td>
+              <td>450 (26.0%)</td>
+              <td>2 (33.3%)</td>
+              <td>4,000 (26.7%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">BDM</td>
+              <td>350 (20.2%)</td>
+              <td>1 (16.7%)</td>
+              <td>3,000 (20%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">HR</td>
+              <td>250 (14.4%)</td>
+              <td>1 (16.7%)</td>
+              <td>2,000 (13.3%)</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Admin-HR & LMS</td>
+              <td>181 (10.5%)</td>
+              <td>0 (0%)</td>
+              <td>1,500 (10%)</td>
+            </tr>
+            <tr class="font-bold">
+              <td>Total</td>
+              <td>1,731 (100%)</td>
+              <td>6 (100%)</td>
+              <td>15,000 (100%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-4 text-sm text-gray-400">
+        <div class="font-medium mb-1">Key Points:</div>
+        <ul class="list-disc pl-5">
+          <li>Good balance between all roles</li>
+          <li>Significant allocation for Telecallers</li>
+          <li>No hot jobs for Admin role</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Strategy 4 -->
+    <div class="card">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="m-0">Option 4</h2>
+        <span class="badge badge-primary">Image 4</span>
+      </div>
+      <div class="overflow-x-auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Profiles (Naukri)</th>
+              <th>% of Profiles</th>
+              <th>Hot Jobs</th>
+              <th>% of Hot Jobs</th>
+              <th>Emails</th>
+              <th>% of Emails</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-medium">Trainers</td>
+              <td>500</td>
+              <td>29%</td>
+              <td>2</td>
+              <td>33%</td>
+              <td>5,000</td>
+              <td>33%</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Telecallers</td>
+              <td>400</td>
+              <td>23%</td>
+              <td>1</td>
+              <td>17%</td>
+              <td>4,000</td>
+              <td>27%</td>
+            </tr>
+            <tr>
+              <td class="font-medium">BDM</td>
+              <td>300</td>
+              <td>17%</td>
+              <td>1</td>
+              <td>17%</td>
+              <td>3,000</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td class="font-medium">HR</td>
+              <td>300</td>
+              <td>17%</td>
+              <td>1</td>
+              <td>17%</td>
+              <td>2,000</td>
+              <td>13%</td>
+            </tr>
+            <tr>
+              <td class="font-medium">Admin - HR & LMS</td>
+              <td>231</td>
+              <td>14%</td>
+              <td>1</td>
+              <td>17%</td>
+              <td>1,000</td>
+              <td>7%</td>
+            </tr>
+            <tr class="font-bold">
+              <td>Total</td>
+              <td>1,731</td>
+              <td>100%</td>
+              <td>6</td>
+              <td>100%</td>
+              <td>15,000</td>
+              <td>100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-4 text-sm text-gray-400">
+        <div class="font-medium mb-1">Key Points:</div>
+        <ul class="list-disc pl-5">
+          <li>Strong focus on Trainers across all channels</li>
+          <li>Balanced distribution for other roles</li>
+          <li>Even spread of hot jobs (1 per role except Trainers)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-6">
+    <h2>Comparison Summary</h2>
+    <p class="text-gray-400 mb-4">
+      All four strategies have their own strengths. Click the "Final Recommendation" button at the top to see our optimized strategy that combines the best elements from each approach.
+    </p>
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Strategy</th>
+            <th>Key Strength</th>
+            <th>Potential Concern</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="font-medium">Option 1</td>
+            <td>Highest focus on Trainers (40%)</td>
+            <td>Email total exceeds 15,000 (error)</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Option 2</td>
+            <td>Strong BDM focus (26%)</td>
+            <td>Low Telecaller profile allocation (11%)</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Option 3</td>
+            <td>Balanced approach across roles</td>
+            <td>No hot jobs for Admin role</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Option 4</td>
+            <td>Equal hot job distribution</td>
+            <td>Less focus on BDM compared to other options</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="flex justify-center items-center">
+      <a href="index2.html" class="button button-primary">View Final Recommendation</a>
+    </div>
+    <p class="mt-4">EdAthena Recruitment Strategy | Prepared March 2025</p>
+  </div>
+</body>
+</html>
